@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - FoodFusion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>FoodFusion</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for food or restaurants...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">My Orders</a>
+            <a href="#">Favorites</a>
+            <a href="#">Recipes</a>
+            <div class="user-profile">
+                <img src="/api/placeholder/40/40" alt="User Profile">
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-user"></i> My Profile</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="homepage-container">
+        <div class="sidebar">
+            <div class="user-info">
+                <img src="/api/placeholder/60/60" alt="User Profile">
+                <h3>Welcome, <span id="user-name">User</span>!</h3>
+            </div>
+            <div class="sidebar-menu">
+                <a href="#" class="active"><i class="fas fa-home"></i> Homepage</a>
+                <a href="#"><i class="fas fa-list"></i> My Orders</a>
+                <a href="#"><i class="fas fa-heart"></i> Favorites</a>
+                <a href="#"><i class="fas fa-book"></i> My Recipes</a>
+                <a href="#"><i class="fas fa-utensils"></i> Dietary Plan</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="personalized-section">
+                <div class="greeting">
+                    <h2>Good <span id="time-of-day">day</span>, <span id="user-name-greeting">User</span>!</h2>
+                    <p id="personalized-message">Here are your personalized food recommendations based on your preferences.</p>
+                </div>
+                <div class="health-status">
+                    <div class="health-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Health Profile</h3>
+                        <p id="health-profile-info">Based on your preferences, we've tailored recommendations for your health goals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-section">
+                <h2>Recommended for You <i class="fas fa-star"></i></h2>
+                <div class="food-carousel">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 1">
+                            <span class="health-tag"><i class="fas fa-leaf"></i> Healthy</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Mediterranean Salad</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Green Garden</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 320 kcal</span>
+                                <span><i class="fas fa-clock"></i> 25 min</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 2">
+                            <span class="health-tag"><i class="fas fa-dumbbell"></i> High Protein</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Grilled Chicken Bowl</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Protein Palace</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 450 kcal</span>
+                                <span><i class="fas fa-clock"></i> 30 min</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 3">
+                            <span class="health-tag"><i class="fas fa-seedling"></i> Vegan</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Quinoa Buddha Bowl</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Healthy Bites</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 380 kcal</span>
+                                <span><i class="fas fa-clock"></i> 20 min</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories-section">
+                <h2>Browse Categories</h2>
+                <div class="category-tabs">
+                    <div class="category-tab active" data-category="all">All</div>
+                    <div class="category-tab" data-category="healthy">Healthy</div>
+                    <div class="category-tab" data-category="quick">Quick Meals</div>
+                    <div class="category-tab" data-category="protein">High Protein</div>
+                    <div class="category-tab" data-category="vegan">Vegan</div>
+                    <div class="category-tab" data-category="gluten-free">Gluten Free</div>
+                </div>
+
+                <div class="food-grid">
+                    <div class="food-card" data-categories="healthy vegan">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 4">
+                            <span class="health-tag"><i class="fas fa-leaf"></i> Healthy</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Avocado Toast</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Green Garden</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 280 kcal</span>
+                                <span><i class="fas fa-clock"></i> 15 min</span>
+                                <span><i class="fas fa-star"></i> 4.5</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card" data-categories="protein quick">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 5">
+                            <span class="health-tag"><i class="fas fa-dumbbell"></i> High Protein</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Protein Wrap</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Protein Palace</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 410 kcal</span>
+                                <span><i class="fas fa-clock"></i> 18 min</span>
+                                <span><i class="fas fa-star"></i> 4.4</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card" data-categories="gluten-free healthy">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 6">
+                            <span class="health-tag"><i class="fas fa-ban"></i> Gluten Free</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Salmon Rice Bowl</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Healthy Bites</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 520 kcal</span>
+                                <span><i class="fas fa-clock"></i> 25 min</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card" data-categories="quick vegan">
+                        <div class="food-image">
+                            <img src="/api/placeholder/300/200" alt="Food 7">
+                            <span class="health-tag"><i class="fas fa-seedling"></i> Vegan</span>
+                        </div>
+                        <div class="food-info">
+                            <h3>Veggie Stir Fry</h3>
+                            <div class="restaurant">
+                                <p>From: <span>Green Garden</span></p>
+                            </div>
+                            <div class="food-meta">
+                                <span><i class="fas fa-fire"></i> 340 kcal</span>
+                                <span><i class="fas fa-clock"></i> 17 min</span>
+                                <span><i class="fas fa-star"></i> 4.3</span>
+                            </div>
+                            <div class="food-actions">
+                                <button class="order-btn">Order Now</button>
+                                <button class="recipe-btn">View Recipe</button>
+                                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurants-section">
+                <h2>Recommended Restaurants</h2>
+                <div class="restaurant-grid">
+                    <div class="restaurant-card">
+                        <div class="restaurant-image">
+                            <img src="/api/placeholder/300/180" alt="Restaurant 1">
+                            <span class="restaurant-tag"><i class="fas fa-leaf"></i> Health-Focused</span>
+                        </div>
+                        <div class="restaurant-info">
+                            <h3>Healthy Bites</h3>
+                            <p>Specializing in nutritious and delicious meals</p>
+                            <div class="restaurant-meta">
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                                <span><i class="fas fa-clock"></i> 30-40 min</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 2.5 km</span>
+                            </div>
+                            <button class="view-menu-btn">View Menu</button>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="restaurant-image">
+                            <img src="/api/placeholder/300/180" alt="Restaurant 2">
+                            <span class="restaurant-tag"><i class="fas fa-dumbbell"></i> Protein-Rich</span>
+                        </div>
+                        <div class="restaurant-info">
+                            <h3>Protein Palace</h3>
+                            <p>High protein meals for fitness enthusiasts</p>
+                            <div class="restaurant-meta">
+                                <span><i class="fas fa-star"></i> 4.5</span>
+                                <span><i class="fas fa-clock"></i> 35-45 min</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 3.2 km</span>
+                            </div>
+                            <button class="view-menu-btn">View Menu</button>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="restaurant-image">
+                            <img src="/api/placeholder/300/180" alt="Restaurant 3">
+                            <span class="restaurant-tag"><i class="fas fa-seedling"></i> Vegan-Friendly</span>
+                        </div>
+                        <div class="restaurant-info">
+                            <h3>Green Garden</h3>
+                            <p>Vegetarian and vegan delights</p>
+                            <div class="restaurant-meta">
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                                <span><i class="fas fa-clock"></i> 25-35 min</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 1.8 km</span>
+                            </div>
+                            <button class="view-menu-btn">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FoodFusion</h2>
+                    <p>Your personalized food experience</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h3>Quick Links</h3>
+                        <a href="#">Home</a>
+                        <a href="#">Restaurants</a>
+                        <a href="#">Recipes</a>
+                        <a href="#">My Orders</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3>Help</h3>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

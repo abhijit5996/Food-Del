@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - FoodFusion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><h1>FoodFusion</h1></a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#restaurants">Restaurants</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <div class="auth-tab active" data-tab="login">Login</div>
+                <div class="auth-tab" data-tab="signup">Signup</div>
+            </div>
+
+            <div class="auth-content">
+                <!-- Login Form -->
+                <form id="login-form" class="auth-form active">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                    <div class="social-auth">
+                        <p>Or login with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-btn google" id="google-login">
+                                <i class="fab fa-google"></i> Google
+                            </button>
+                            <button type="button" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signup-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Sign Up</button>
+                </form>
+
+                <!-- Preferences Form (Hidden initially) -->
+                <form id="preferences-form" class="auth-form preferences-form">
+                    <h3>Tell us about your food preferences</h3>
+                    <p class="preferences-intro">This helps us recommend the best food options for you!</p>
+                    
+                    <div class="form-group">
+                        <label>What type of food do you love?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="italian" name="food_type" value="italian">
+                                <label for="italian">Italian</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="chinese" name="food_type" value="chinese">
+                                <label for="chinese">Chinese</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="indian" name="food_type" value="indian">
+                                <label for="indian">Indian</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="mexican" name="food_type" value="mexican">
+                                <label for="mexican">Mexican</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="thai" name="food_type" value="thai">
+                                <label for="thai">Thai</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="japanese" name="food_type" value="japanese">
+                                <label for="japanese">Japanese</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you health-conscious?</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="very-health-conscious" name="health_conscious" value="very">
+                                <label for="very-health-conscious">Very health-conscious</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="somewhat-health-conscious" name="health_conscious" value="somewhat">
+                                <label for="somewhat-health-conscious">Somewhat health-conscious</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="not-health-conscious" name="health_conscious" value="not">
+                                <label for="not-health-conscious">Not particularly health-conscious</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Do you have any dietary restrictions?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="vegetarian" name="dietary_restriction" value="vegetarian">
+                                <label for="vegetarian">Vegetarian</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="vegan" name="dietary_restriction" value="vegan">
+                                <label for="vegan">Vegan</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="gluten-free" name="dietary_restriction" value="gluten-free">
+                                <label for="gluten-free">Gluten-free</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="dairy-free" name="dietary_restriction" value="dairy-free">
+                                <label for="dairy-free">Dairy-free</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="nut-allergy" name="dietary_restriction" value="nut-allergy">
+                                <label for="nut-allergy">Nut allergy</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="medical-conditions">Do you have any medical conditions that affect your diet?</label>
+                        <textarea id="medical-conditions" placeholder="E.g., Diabetes, Hypertension, etc."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="calorie-preference">Daily calorie intake preference</label>
+                        <select id="calorie-preference">
+                            <option value="">Select an option</option>
+                            <option value="low">Low calorie (1200-1500)</option>
+                            <option value="medium">Medium calorie (1500-2000)</option>
+                            <option value="high">High calorie (2000+)</option>
+                            <option value="no-preference">No preference</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cooking-frequency">How often do you cook at home?</label>
+                        <select id="cooking-frequency">
+                            <option value="">Select an option</option>
+                            <option value="daily">Daily</option>
+                            <option value="few-times-week">Few times a week</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="rarely">Rarely</option>
+                            <option value="never">Never</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="auth-btn">Complete Profile</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FoodFusion</h2>
+                    <p>Your personalized food experience</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h3>Quick Links</h3>
+                        <a href="index.html">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#restaurants">Restaurants</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3>Help</h3>
+                        <a href="#">FAQ</a>
+                        <a href="index.html#contact">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
